@@ -1,0 +1,20 @@
+{
+	"name" : "sq/microframework",
+	"description" : "Micro Framework MVC",
+	"license" : "MIT",
+	"type" : "project",
+	"authors" : [{
+			"name" : "Sergio Ricardo",
+			"email" : "sergio.rpq@gmail.com"
+		}
+	],
+	"autoload" : {
+		"psr-4" : {
+			"app\\" : "app/",
+			"core\\" : "core/"
+		}
+	},
+	"require" : {
+		"php" : ">=5.4"
+	}
+}
