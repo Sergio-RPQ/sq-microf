@@ -4,9 +4,13 @@
      * Local que será utilizado para configurar as rotas do framework
      * */
 
-    $routes[] = ['/', 'PrincipalController@index'];
-    $routes[] = ['/posts', 'PostsController@index'];
+    //A rota (/) é a raiz e deve sempre existir 
+    $routes[] = ['/', 'MainController@index'];
+
+    //Demais rotas 
+    $routes[] = ['/posts', 'PostController@index'];
     $routes[] = ['/posts/{id}/show', 'PostController@showPosts'];
     $routes[] = ['/contatos/show', 'ContatoController@showContatos'];
+    $routes[] = ['/empresa/{idempresa}/contato/{idcontato}', 'EmpresaController@mostarContato'];
     
     return $routes;
