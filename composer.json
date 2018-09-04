@@ -14,7 +14,12 @@
 			"core\\" : "core/"
 		}
 	},
+	"files": [
+            "core/helpers.php"
+    ],
 	"require" : {
-		"php" : ">=5.4"
+		"php" : ">=5.4",
+		"components/jquery": ">=3.3.1",
+		"twbs/bootstrap": ">=4.1.3"
 	}
 }
