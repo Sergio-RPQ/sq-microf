@@ -7,6 +7,7 @@
 	define(SEP, $arrayConfig['sp']);
 	define(CSS_BOOTSTRAP, $arrayConfig['cssbootstrap']);
 	define(SERVER, $arrayConfig['host']);
+	define(BOOTSTRAPCSS, $arrayConfig['cdnbootstrap_css']);
 
     require_once __DIR__.'/../vendor/autoload.php';
     require_once __DIR__.'/../core/bootstrap.php';
