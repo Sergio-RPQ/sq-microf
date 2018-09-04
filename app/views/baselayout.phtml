@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>SQ Framework</title>
+		<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
 		
 		
 	</head>
@@ -12,5 +13,10 @@
 		<p>Carregado apartir do layout base.</p>
 		<p>Constante para diretório base</p>
 		<?php  echo BASE_PATH; ?>
+		<p><?php  echo SEP; ?></p>
+		<p><?php  echo CSS_BOOTSTRAP; ?></p>
+		<p><?php  echo SERVER; ?></p>
+		<p><?php  echo $this->helper->getCss('bootstrap.min.css', CSS_BOOTSTRAP); ?></p>
+
 	</body>
 </html>

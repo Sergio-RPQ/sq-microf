@@ -4,10 +4,11 @@
 
 	class Helper{
 
-		private $baseAssetsPath;
+		private $basePath;
 
-		public function __construct($pathAssets){
+		public function __construct(){
 
+			/*
 			$arrayPath = explode('/', $pathAssets);
 			$ctpath = (count($arrayPath) -1);
 			$returnpath = '';
@@ -15,8 +16,9 @@
 			for($i =0; $i < $ctpath; $i++){
 				$returnpath .= $arrayPath[$i].'/';
 			}
-			$returnpath .= 'vendor';
+			
 			$this->baseAssetsPath = $returnpath;
+			*/
 		}
 
 		private function getBaseAssetsPath(){
@@ -25,6 +27,15 @@
 
 		public function getAsset($pathAsset){
 			return $this->getBaseAssetsPath().$pathAsset;
+		}
+
+		public function getCss($arquivocss, $path){
+			$varteste  = '';
+			$varteste .= 'href="';
+			$varteste .= $path;
+			$varteste .= $arquivocss;
+			$varteste .= '"';
+			return $varteste;
 		}
 
 	}

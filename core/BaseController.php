@@ -8,10 +8,11 @@
 	   	private $viewPath;
 	   	private $layoutPath;
 	   	protected $basePathApp;
+	   	protected $helper;
 
 	   	public function __construct(){
 	   		$this->dadosView = new \stdClass;
-	   		$this->$basePathApp = BASE_PATH;
+	   		$this->helper = new Helper();
 	   	}
 
 	   	protected function renderView($viewPathInfo, $layout = null){
@@ -40,5 +41,4 @@
 	   			echo 'Não foi possível carregar o layout base.';
 	   		}
 	   	}
-
    }
